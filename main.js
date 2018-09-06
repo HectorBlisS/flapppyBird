@@ -31,9 +31,9 @@ class Board {
     this.image.onload = () => {
       this.draw();
     };
-    this.music = new Audio();
-    this.music.src =
-      "http://66.90.93.122/ost/zelda-2/eojdmbhl/12.%20Palace%20Theme%201.mp3";
+    // this.music = new Audio();
+    // this.music.src =
+    //   "http://66.90.93.122/ost/zelda-2/eojdmbhl/12.%20Palace%20Theme%201.mp3";
   }
   draw() {
     this.x -= 0.5;
@@ -64,7 +64,7 @@ class Flappy {
     this.image.onload = () => {
       this.draw();
     };
-    this.gravity = 3;
+    this.gravity = 1;
     this.crash = new Audio();
     this.crash.src = "crash.mp3";
   }
@@ -107,7 +107,7 @@ class Pipe {
 //instancias
 
 var board = new Board();
-var flappy = new Flappy();
+let flappy = new Flappy();
 //funciones principales
 function update() {
   frames++;
